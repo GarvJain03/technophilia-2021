@@ -1,22 +1,31 @@
 import React from "react";
+import { Link as ScrollLink } from "react-scroll";
 
 function Hero() {
   return (
     <div>
       <div
         className="hero min-h-screen"
-        style={{backgroundImage: "url(https://picsum.photos/id/1005/1600/1400)"}}
+        style={{
+          backgroundImage: "url(https://wallpaperaccess.com/full/165496.jpg)",
+        }}
       >
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="text-center hero-content text-neutral-content">
           <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+            <h1 className="mb-5 text-5xl font-bold">GameZeo</h1>
             <p className="mb-5">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+              Your very own online store for every gamer's needs at affordable
+              prices.
             </p>
-            <button className="btn btn-primary">Get Started</button>
+            <ScrollLink
+              to="features"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              <button className="btn btn-primary">Read More</button>
+            </ScrollLink>
           </div>
         </div>
       </div>

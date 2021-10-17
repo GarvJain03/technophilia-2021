@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import {Transition} from '@headlessui/react'
+import { Transition } from "@headlessui/react";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,33 +19,34 @@ function Header() {
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <a
-                    href="#"
-                    className=" hover:bg-gray-700 text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Home
-                  </a>
-
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Services
-                  </a>
-
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Products
-                  </a>
-
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                     Contact Us
-                  </a>
+                  <Link to="/">
+                    <span
+                      className=" hover:bg-gray-700 text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    >
+                      Home
+                    </span>
+                  </Link>
+                  <Link to="/services">
+                    <span
+                      className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    >
+                      Services
+                    </span>
+                  </Link>
+                  <Link to="/products">
+                    <span
+                      className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    >
+                      Products
+                    </span>
+                  </Link>
+                  <Link to="/contact">
+                    <span
+                      className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    >
+                      Contact Us
+                    </span>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -107,33 +109,26 @@ function Header() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a
-                  href="#"
-                  className="hover:bg-gray-700 text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Home
-                </a>
-
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Services
-                </a>
-
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Products
-                </a>
-
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Contact Us
-                </a>
+                <Link to="/">
+                  <span className="hover:bg-gray-700 text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                    Home
+                  </span>
+                </Link>
+                <Link to="/services">
+                  <span className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                    Services
+                  </span>
+                </Link>
+                <Link to="/products">
+                  <span className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                    Products
+                  </span>
+                </Link>
+                <Link to="/contact">
+                  <span className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                    Contact Us
+                  </span>
+                </Link>
               </div>
             </div>
           )}
