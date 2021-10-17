@@ -19,12 +19,12 @@ function Hero() {
               prices.
             </p>
             <ScrollLink
-              to="features"
+              to="testimonials"
               spy={true}
               smooth={true}
               duration={500}
             >
-              <button className="btn btn-primary">Read More</button>
+              <button className="btn btn-primary">testimonials</button>
             </ScrollLink>
           </div>
         </div>

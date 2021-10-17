@@ -1,12 +1,12 @@
 import React from "react";
-import Features from "../components/Home/Features";
+import Testimonials from "../components/Home/Testimonials";
 import Hero from "../components/Home/Hero";
 
 function Home() {
   return (
     <div>
       <Hero />
-      <Features/>
+      <Testimonials/>
     </div>
   );
 }
