@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ProductsList from "./pages/ProductsList";
 import Product from "./pages/Product";
+import PageNotFound from "./pages/404";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <ProductsList />
           </Route>
           <Route path="/product/:id" component={Product} />
+          <Route component={PageNotFound} />
         </Switch>
         <Footer />
       </Router>
