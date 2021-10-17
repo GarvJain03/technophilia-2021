@@ -8,6 +8,7 @@ function PageNotFound() {
         <div class="flex-col hero-content lg:flex-row-reverse">
           <img
             src="https://jstseguru.in/assets/images/jstseguru-404.gif"
+            alt="404"
             class="max-w-sm rounded-lg"
           />
           <div>

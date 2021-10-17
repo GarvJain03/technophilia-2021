@@ -14,11 +14,16 @@ function FeaturesHero() {
             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
               Features
             </h1>
-            <p class="mb-8 leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-              praesentium labore ex id accusamus officiis officia obcaecati
-              fugiat? Unde voluptatem sed tempore sit deleniti asperiores nemo
-              quas perferendis iure velit.{" "}
+            <p class="mb-8 leading-relaxed text-justify">
+              <h1 className="font-bold text-lg mb-3">Service before self</h1>
+              Launched in 1989 since the era of retro games, GameZeo started out
+              as a small neighbourhood store. Over the years, with the love and
+              support of our customers we have grown into a large family of
+              service providers. We put our customers needs before ourselves and
+              provide our prodcuts at an economical and reasonable rate. Ranging
+              from games to PC parts and much more, everything is provided to
+              you at your doorstep. We also have an extensive 24/7 customer care
+              support.
             </p>
             <div class="flex justify-center">
               <ScrollLink to="stats" spy={true} smooth={true} duration={500}>
