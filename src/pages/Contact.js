@@ -11,9 +11,11 @@ function Contact() {
       setAlert(null);
     }, 3000);
   };
+
   const handleSubmit = (e) => {
     showAlert("Your response has been recorded.");
   };
+  
   return (
     <div class="flex justify-center items-center pt-12 h-screen mx-auto bg-gray-100">
       <form class="w-full md:w-3/4 lg:w-3/6 p-4" onReset={handleSubmit}>
