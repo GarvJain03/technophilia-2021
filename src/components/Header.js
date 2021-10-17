@@ -12,7 +12,7 @@ function Header() {
             <div className="flex items-center">
               <Link to="/">
                 <div className="flex-shrink-0">
-                  <img className="h-8 w-8" src="/logo.jpg" alt="logo" />
+                  <img className="h-8 w-8" src="/logo.svg" alt="logo" />
                 </div>
               </Link>
               <div className="hidden md:block">
