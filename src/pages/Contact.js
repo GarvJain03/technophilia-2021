@@ -11,12 +11,12 @@ function Contact() {
       setAlert(null);
     }, 3000);
   };
-  const handleClick = () => {
+  const handleSubmit = (e) => {
     showAlert("Your response has been recorded.");
   };
   return (
     <div class="flex justify-center items-center pt-12 h-screen mx-auto bg-gray-100">
-      <form class="w-full md:w-3/4 lg:w-3/6 p-4">
+      <form class="w-full md:w-3/4 lg:w-3/6 p-4" onReset={handleSubmit}>
         <h1 class="mb-5 text-5xl font-bold text-center">Contact Us</h1>
         <Alert alert={alert} />
         <div class="p-3">
@@ -54,7 +54,6 @@ function Contact() {
           <button
             type="reset"
             class="w-full bg-gray-700 hover:bg-gray-900 text-white font-bold py-3 px-4 rounded text-2xl"
-            onClick={handleClick}
           >
             Submit
           </button>
